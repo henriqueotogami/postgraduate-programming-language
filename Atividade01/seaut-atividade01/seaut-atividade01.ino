@@ -22,7 +22,7 @@ void loop() {
 
   boolean isInsideLimit = (abs((sensorRight - sensorLeft)) >= 10);
   boolean isGreaterLuxRight = (sensorRight > sensorLeft);
-
+/   
   if (isInsideLimit) {
     lastposition = isGreaterLuxRight ? (lastposition+STEP_ANGLE) : (lastposition-STEP_ANGLE);
     lastposition = constrain(lastposition, 0, 180);
